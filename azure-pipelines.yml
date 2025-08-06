@@ -20,8 +20,8 @@ variables:
 
 steps:
 - script: |
+    cat ../Dockerfile
     pwd
-    ls -R
   displayName: '📍 Kiểm tra vị trí và file'
 
 
