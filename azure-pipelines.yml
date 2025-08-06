@@ -14,7 +14,7 @@ pool:
 variables:
   dockerRegistryServiceConnection: 'Dockerhub-baohq3'  # tên service connection trong Azure DevOps
   imageRepository: 'baohq3/frontend'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'frontend/Dockerfile'
   tag: '$(Build.BuildId)'
 
 steps:
