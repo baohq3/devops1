@@ -20,7 +20,7 @@ variables:
 
 steps:
 - script: |
-    cat ../Dockerfile
+    cat frontend/Dockerfile
     pwd
   displayName: '📍 Kiểm tra vị trí và file'
 
