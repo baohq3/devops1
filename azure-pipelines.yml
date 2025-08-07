@@ -9,7 +9,8 @@ trigger:
 pool:
   name: 'Macbook Air'
   demands:
-    - Agent.Name -equals ubuntu-server
+#    - Agent.Name -equals ubuntu-server
+     - Agent.Name -equals Macbook-Air
 
 variables:
   dockerRegistryServiceConnection: 'Dockerhub-baohq3'  # tên service connection trong Azure DevOps
@@ -41,8 +42,8 @@ steps:
 #      tags: |
 #        $(tag)
 
-- script: echo "✅ Image $(imageRepository):$(tag) pushed to Docker Hub"
-  displayName: 'Confirm Push'
+#- script: echo "✅ Image $(imageRepository):$(tag) pushed to Docker Hub"
+#  displayName: 'Confirm Push'
 
 
 
